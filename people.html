@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'BMKirangHaerang';
+            src: url('BMKIRANGHAERANG-OTF.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            background-color: #edefd6;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Playfair Display', serif;
+        }
+        header {
+            position: relative;
+            text-align: center;
+            margin-top: 1px;
+        }
+        header img {
+            width: 200px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        nav {
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 126px;
+        }
+        li {
+            display: inline;
+        }
+        a {
+            text-decoration: none;
+            color: #d2aa76;
+            font-size: 1.2em;
+            font-family: 'BMKirangHaerang', sans-serif;
+        }
+        a:hover {
+            color: #edcb90ec;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            width: 90%;
+        }
+        .image-grid img {
+            width: calc(80% - 30px); /* 한 줄에 3개씩 */
+            max-width: 150px; /* 이미지의 최대 크기 */
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #ead9abd3;
+            color: #000000;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="logo.png" alt="사이트 로고">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="introduce.html">게임소개</a></li>
+                <li><a href="gallery.html">갤러리</a></li>
+                <li><a href="village.html">나의 마을</a></li>
+                <li><a href="people.html">마을 주민</a></li>
+                <li><a href="diy.html">DIY 레시피</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 이미지 그리드 -->
+    <div class="image-grid">
+        <img src="p.png" alt="이미지 1">
+        <img src="p7.png" alt="이미지 2">
+        <img src="p3.png" alt="이미지 3">
+        <img src="p4.png" alt="이미지 4">
+        <img src="p5.png" alt="이미지 5">
+        <img src="p6.png" alt="이미지 6">
+        <img src="p2.png" alt="이미지 7">
+        <img src="p8.png" alt="이미지 8">
+        <img src="p9.png" alt="이미지 9">
+        <img src="p10.png" alt="이미지 10">
+        <img src="p11.png" alt="이미지 11">
+        <img src="p12.png" alt="이미지 12">
+    </div>
+
+    <footer>
+        <p>©️김소연</p>
+    </footer>
+</body>
+</html>

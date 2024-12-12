@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'BMKirangHaerang';
+            src: url('BMKIRANGHAERANG-OTF.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            background-color: #edefd6;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Playfair Display', serif;
+        }
+        header {
+            position: relative;
+            text-align: center;
+            margin-top: 1px;
+        }
+        header img {
+            width: 200px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        nav {
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 126px;
+        }
+        li {
+            display: inline;
+        }
+        a {
+            text-decoration: none;
+            color: #d2aa76;
+            font-size: 1.2em;
+            font-family: 'BMKirangHaerang', sans-serif;
+        }
+        a:hover {
+            color: #edcb90ec;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+            width: 90%;
+        }
+        .image-container {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 1 / 1; /* 정사각형 비율 */
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: opacity 0.3s ease-in-out;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .hover-image {
+            opacity: 0; /* 기본적으로 보이지 않음 */
+            transition: opacity 0.3s ease-in-out;
+        }
+        .image-container:hover .hover-image {
+            opacity: 1; /* 호버 시 보임 */
+        }
+        .image-container:hover img:not(.hover-image) {
+            opacity: 0; /* 호버 시 원래 이미지를 숨김 */
+        }
+        footer {
+            background-color: #ead9abd3;
+            color: #000000;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="logo.png" alt="사이트 로고">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="introduce.html">게임소개</a></li>
+                <li><a href="gallery.html">갤러리</a></li>
+                <li><a href="village.html">나의 마을</a></li>
+                <li><a href="people.html">마을 주민</a></li>
+                <li><a href="diy.html">DIY 레시피</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 이미지 그리드 -->
+    <div class="image-grid">
+        <div class="image-container">
+            <img src="diy.jpg" alt="이미지 1">
+            <img src="dd.jpg" alt="호버 이미지 1" class="hover-image">
+        </div>
+        <div class="image-container">
+            <img src="diy2.jpg" alt="이미지 2">
+            <img src="dd2.jpg" alt="호버 이미지 2" class="hover-image">
+        </div>
+        <div class="image-container">
+            <img src="diy3.jpg" alt="이미지 3">
+            <img src="dd3.jpg" alt="호버 이미지 3" class="hover-image">
+        </div>
+        <div class="image-container">
+            <img src="diy4.jpg" alt="이미지 4">
+            <img src="dd4.jpg" alt="호버 이미지 4" class="hover-image">
+        </div>
+        <div class="image-container">
+            <img src="diy5.jpg" alt="이미지 5">
+            <img src="dd5.jpg" alt="호버 이미지 5" class="hover-image">
+        </div>
+        <div class="image-container">
+            <img src="diy6.jpg" alt="이미지 6">
+            <img src="dd6.jpg" alt="호버 이미지 6" class="hover-image">
+        </div>
+        <div class="image-container">
+            <img src="diy7.jpg" alt="이미지 7">
+            <img src="dd7.jpg" alt="호버 이미지 7" class="hover-image">
+        </div>
+        <div class="image-container">
+            <img src="diy8.jpg" alt="이미지 8">
+            <img src="dd8.jpg" alt="호버 이미지 8" class="hover-image">
+        </div>
+        <div class="image-container">
+            <img src="diy9.jpg" alt="이미지 9">
+            <img src="dd9.jpg" alt="호버 이미지 9" class="hover-image">
+        </div>
+    </div>
+
+    <footer>
+        <p>©️김소연</p>
+    </footer>
+</body>
+</html>

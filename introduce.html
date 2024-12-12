@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'BMKirangHaerang';
+            src: url('BMKIRANGHAERANG-OTF.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            background-color: #edefd6;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Playfair Display', serif;
+            height: 100vh;
+            justify-content: space-between; /* 요소 간 간격 조절 */
+        }
+        header {
+            position: relative;
+            text-align: center;
+            margin-top: 1px;
+        }
+        header img {
+            width: 200px; /* 크기 키움 */
+            height: auto;
+            display: block;
+            margin: 0 auto; /* 가로 정렬 가운데 */
+        }
+        nav {
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 126px;
+        }
+        li {
+            display: inline;
+        }
+        a {
+            text-decoration: none;
+            color: #d2aa76;
+            font-size: 1.2em;
+            font-family: 'BMKirangHaerang', sans-serif; /* 배달의민족 폰트 적용 */
+        }
+        a:hover {
+            color: #edcb90ec;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .background-container {
+            position: relative; /* 배경과 작은 이미지를 포함할 컨테이너 */
+            margin-top: 20px;
+            width: 900px; /* 배경 이미지 크기 */
+            height: 500px; /* 배경 이미지 크기 */
+        }
+        .background-container img.background {
+            width: 100%; /* 배경 이미지를 컨테이너 크기에 맞춤 */
+            height: 100%;
+        }
+        .background-container img.overlay {
+            position: absolute; /* 배경 위로 배치 */
+            top: 50%; /* 컨테이너 기준 중앙 배치 */
+            left: 50%; /* 컨테이너 기준 중앙 배치 */
+            transform: translate(-50%, -50%); /* 정중앙 정렬 */
+            width: 650px; /* 작은 이미지 크기 */
+            height: auto;
+            z-index: 1; /* 배경 이미지 위로 표시 */
+        }
+        footer {
+            background-color: #ead9abd3;
+            color: #000000;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <!-- 로고 이미지 삽입 -->
+            <img src="logo.png" alt="사이트 로고">
+        </a>
+        <!-- 네비게이션 메뉴 -->
+        <nav>
+            <ul>
+                <li><a href="introduce.html">게임소개</a></li>
+                <li><a href="gallery.html">갤러리</a></li>
+                <li><a href="village.html">나의 마을</a></li>
+                <li><a href="people.html">마을 주민</a></li>
+                <li><a href="diy.html">DIY 레시피</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 배경 이미지와 작은 이미지 -->
+    <div class="background-container">
+        <img src="back.jpg" alt="배경 이미지" class="background">
+        <img src="in.png" alt="소개 이미지" class="overlay">
+    </div>
+
+    <footer>
+        <p>©️김소연</p>
+    </footer>
+</body>
+</html>
